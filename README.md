@@ -22,7 +22,8 @@ Submitted: January --, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
             Design:
             •	Landing page to expain the rules, show the high scores;
-            •	TBD
+            •	Need to build a time to countdown and penalize if there is a wrong guess;
+            •	
 
             Build:
             •	Set up three files, index.html, script.js and style.css

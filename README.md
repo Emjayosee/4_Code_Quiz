@@ -22,12 +22,30 @@ Submitted: January --, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
             Design:
             •	Landing page to expain the rules, show the high scores;
-            •	Need to build a time to countdown and penalize if there is a wrong guess;
+            •	Need to build a timer to countdown and penalize if there is a wrong guess;
+            •	Need to be able to cycle questions through a part of the viewport;
+            •	Need a way to aggregate the scores, add as records and display the top scores;
+            •	Need an alert to say when the game is over;
+            •	Need a way to identify the player;
+            •	
+            •	
             •	
 
+
             Build:
-            •	Set up three files, index.html, script.js and style.css
-            •	TBD
+            •	Set up three files, index.html, script.js and style.css (add to Github)
+            •	HTML:
+                >Layout for Landing page
+                >Layout for question and multiple choice answers
+            •	JavaScript: 
+                > Timer routine
+                > Splash screen routine that announces game is over - alert box
+            •	CSS:
+                >Cloud background image and footer styling
+            •   Establish Q&A theme
+            •	
+            •	
+            •	
 
             Validation:
             •	TBD

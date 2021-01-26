@@ -14,7 +14,7 @@
     <container>
     <h1>The Great Week 3 Coding Challenge</h1>
     <div class="Intro" >
-      <p>Welcome to the Week 3 Coding Challeneg.  It will give you a chance to test your skills in coding terminology  by answering five skill testing questions. When you are ready to begin the quiz, enter your name then press the start button, the timer will start.  You will be given 60 seconds to choose the correct answer to five questions. The game will end after 60 seconds and your score will be displayed.  Only the top three high scores will be displayed.</p>
+      <p>Welcome to the Week 3 Coding Challenge.  It will give you a chance to test your skills in coding terminology  by answering five skill testing questions. When you are ready to begin the quiz, enter your name then press the start button, the timer will start.  You will be given 60 seconds to choose the correct answer to five questions. The game will end after 60 seconds and your score will be displayed.  Only the top three high scores will be displayed.</p>
 
     </div>
     <br>
@@ -26,18 +26,18 @@
       <label class="name" for="name">Enter Your Name</label>
       <input type="text" id="playerName" name="playerName" required>
       <br>
-      <button class="startButton btn" type="submit" onclick="revealQ1(1)">Start</button>
+      <button class="startButton btn" type="submit" onclick="revealQ1(event)">Start</button>
     </form>
-      <br>
       <!-- <label class="timer">Time Spent so Far </label> <input type="text" readonly="" id="timespent" value="0:00" onclick="startTimer"></label> -->
       <timer>
-        <div>Quiz ends in  <span id="time">05:00</span> minutes!</div>
+        <div>Quiz ends in  <h3 id="time"></h3> of a minute!</div>
       </timer>
 
       <div id="quizcontainer" class="quizcontainer">
 
-        <h3>Question 1 of 5:</h3>
-        <p id="qtext">Question</p>
+        <!-- Need to have the number x of y change -->
+        <h3 id="questionnumber" >Question 1 of 5 :</h3> 
+
         <form role="form" id="quizform" name="quizform">
          
           <div style="position:relative;width:100%;">

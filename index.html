@@ -14,7 +14,7 @@
     <container>
     <h1>The Great Week 3 Coding Challenge</h1>
     <div class="Intro" >
-      <p>Welcome to the Week 3 Coding Challenge.  It will give you a chance to test your skills in coding terminology  by answering five skill testing questions. When you are ready to begin the quiz, enter your name then press the start button, the timer will start.  You will be given 60 seconds to choose the correct answer to five questions. The game will end after 60 seconds and your score will be displayed.  Only the top three high scores will be displayed.</p>
+      <!-- <p>Welcome to the Week 3 Coding Challenge.  It will give you a chance to test your skills in coding terminology  by answering five skill testing questions. When you are ready to begin the quiz, enter your name then press the start button, the timer will start.  You will be given 60 seconds to choose the correct answer to five questions. The game will end after 60 seconds and your score will be displayed.  Only the top three high scores will be displayed.</p> -->
 
     </div>
     <br>
@@ -23,15 +23,12 @@
       <form>
         <!-- <label for="username">Username:</label>
         <input type="text" id="username" name="username" required> -->
-      <label class="name" for="name">Enter Your Name</label>
-      <input type="text" id="playerName" name="playerName" required>
-      <br>
+      <div><label class="name" for="name">Enter Your Name</label>
+      <div><input type="text" id="playerName" name="playerName" required>
+      <p>Time Remaining in the Quiz is: <span id="time"></span></p></div></div>
+     
       <button class="startButton btn" type="submit" onclick="revealQ1(event)">Start</button>
     </form>
-      <!-- <label class="timer">Time Spent so Far </label> <input type="text" readonly="" id="timespent" value="0:00" onclick="startTimer"></label> -->
-      <timer>
-        <div>Quiz ends in  <h3 id="time"></h3> of a minute!</div>
-      </timer>
 
       <div id="quizcontainer" class="quizcontainer">
 
@@ -40,36 +37,33 @@
 
         <form role="form" id="quizform" name="quizform">
          
-          <div style="position:relative;width:100%;">
-            <div id="altcontainer" class="notranslate">
+          <div>
 
-              <label id="choiceA" class="container">Choice1
+              <label id="question" class="container">
+                <input type="text" >
+                <span class="question"></span>
+              <label id="choiceA" class="container">
                 <input type="radio" checked="checked" name="radio" class="radio">
                 <span class="checkmark"></span>
               </label>
-              <label id="choiceB" class="container">Choice2
+              <label id="choiceB" class="container">
                 <input type="radio" name="radio" class="radio">
                 <span class="checkmark"></span>
               </label>
-              <label id="choiceC" class="container">Choice3
+              <label id="choiceC" class="container">
                 <input type="radio" name="radio" class="radio">
                 <span class="checkmark"></span>
               </label>
-              <label id="choiceD" class="container">Choice4
+              <label id="choiceD" class="container">
                 <input type="radio" name="radio" class="radio">
                 <span class="checkmark"></span>
               </label>
 
-              <br>
-            <div id="answerbuttoncontainer">
-                <button class="answerbutton btn" type="submit" >Next</button>
-             </div>
-            </div>
-            
+              <div id="nextQuestioncontainer">
+                <button class="nextQuestion btn" type="submit" onclick="nextQuestion(event)">Next</button>
+              </div>
           </div>
-
-        </form>
-
+        </form> 
       </div>
 
     </div>

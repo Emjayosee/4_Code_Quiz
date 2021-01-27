@@ -24,6 +24,9 @@ body {
   background-color: rgb(226, 160, 37);
 }
 
+/* #time {
+  float: left;
+} */
 
 #quizmain {
   font-family: "Segoe UI",Arial,sans-serif;
@@ -51,7 +54,7 @@ header {
 }
 
 .Intro {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(64, 51%, 88%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -59,7 +62,7 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 10px 100px;
 }
 
 .Question_Area {
@@ -144,7 +147,9 @@ header {
 	background-color: black;
 }
 
-
+.nextQuestion {
+  float:right
+}
 
 
 

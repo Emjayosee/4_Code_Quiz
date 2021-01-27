@@ -15,14 +15,18 @@ organized top down to match the HTML flow.  Much of the CSS styling is self expl
         if (field == "") {
             alert("You Must Enter a Name to Play");
         } else {
-        document.getElementById("quizcontainer").style.color = "black";
-       
+        
+            document.getElementById("quizcontainer").style.color = "black";
+            // document.querySelector("container").style.backgroundColor = "black";
+            // document.querySelector("checkmark").style.backgroundColor = "black";
+
             timerId = setInterval(clockTick, 1000);
 
-           document.querySelector("#choiceA").textContent = quiz[0].choices[0];
-           document.querySelector("#choiceB").textContent = quiz[0].choices[1];
-           document.querySelector("#choiceC").textContent = quiz[0].choices[2];
-           document.querySelector("#choiceD").textContent = quiz[0].choices[3];
+            document.querySelector("#question").textContent = quiz[0].question;
+            document.querySelector("#choiceA").textContent = quiz[0].choices[0];
+            document.querySelector("#choiceB").textContent = quiz[0].choices[1];
+            document.querySelector("#choiceC").textContent = quiz[0].choices[2];
+            document.querySelector("#choiceD").textContent = quiz[0].choices[3];
         }
            
     }
@@ -34,34 +38,31 @@ organized top down to match the HTML flow.  Much of the CSS styling is self expl
         }
     }
 
+    var quiz = 0;
+    
+    // function nextQuestion(event){
+    //     event.preventDefault()
+
+    //         document.querySelector("#questionNumber").textContent = "Question 2 of 5";
+    //         document.querySelector("#choiceA").textContent = quiz[1].choices[0];
+    //         document.querySelector("#choiceA").textContent = quiz[1].choices[0];
+    //         document.querySelector("#choiceB").textContent = quiz[1].choices[1];
+    //         document.querySelector("#choiceC").textContent = quiz[1].choices[2];
+    //         document.querySelector("#choiceD").textContent = quiz[1].choices[3];
+
+
+    
+    //     questionNum++
+    //     // decide to show next question (if more), else end quiz
+    //     if( questionNum<questions.length )
+    //       showNextQuestion()
+    //     else
+    //       finishQuiz()
+    //   }
+
     function quizEnd(){
         clearInterval(timerId);
     }
-
-        // function startTimer(duration, display) {
-        //     var timer = duration, minutes, seconds;
-        //     setInterval(function () {
-        //         minutes = parseInt(timer / 60, 10);
-        //         seconds = parseInt(timer % 60, 10);
-        
-        //         minutes = minutes < 10 ? "0" + minutes : minutes;
-        //         seconds = seconds < 10 ? "0" + seconds : seconds;
-        
-        //         display.textContent = minutes + ":" + seconds;
-        
-        //         if (--timer < 0) {
-        //             timer = duration;
-        //         }
-        //     }, 1000);
-        // }
-        
-        // window.onload = function () {
-        //     var oneMinutes = 60,
-        //         display = document.querySelector('#time');
-        //     startTimer(oneMinutes, display);
-        // };
-
-        //declare an object called quiz with the Q and A
 
         var quiz = [
             {
@@ -91,7 +92,9 @@ organized top down to match the HTML flow.  Much of the CSS styling is self expl
          },
         ];
         
-            
+        function nextQuestion(){
+
+        }
             
             
 

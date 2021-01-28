@@ -6,7 +6,7 @@ This is the repo for the Code Quiz assignment 04, due Jan 26, 2021.
 
 Submitted: January --, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
-# 01 Goal: The Goal of this project is .......  Here is a link to the Github folder https://github.com/Emjayosee/Assignment03 and a link to the deployed website https://emjayosee.github.io/Assignment03/.
+# 01 Goal: The Goal of this project is .......  Here is a link to the Github folder https://github.com/Emjayosee/Assignment04 and a link to the deployed website https://emjayosee.github.io/Assignment04/.
 
 # 02 Approach:
 

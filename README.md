@@ -10,7 +10,7 @@ Submitted: January --, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
 
 # 02 Approach:
 
-    In approching this project, I at first looked at the starter code provided, then found that there was not any starter code, so I realized I had to build this entirely from scratch. 
+    In approching this project, I at first looked at the starter code provided, then found that there was not any starter code, so I realized I had to build this entirely from scratch.  Here is a link to the deployed page - https://emjayosee.github.io/Assignment04/.
 
     I followed the following plan design:
 

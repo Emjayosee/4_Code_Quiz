@@ -27,16 +27,44 @@ Submitted: January --, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
             •	Need a way to aggregate the scores, add as records and display the top scores;
             •	Need an alert to say when the game is over;
             •	Need a way to identify the player;
-            •	
-            •	
-            •	
+            
+            Here is the basic logic flow (ignoring the high score feature):
+
+
+                [X] On load, display introduction and name/start section
+
+                [X] User enters name
+
+                [X] On START, question 1 is displayed and clock starts to countdown, await user event
+
+                [X] User selects answer from radio box and submits response by clicking button
+
+                [ ] If time = 0, quizEnd
+
+                [ ] On Click, nextQuestion
+
+                [ ] If answer is correct, score = plus one
+
+                [ ] If answer is incorrect time = minus 5 seconds
+
+                [ ] If (time > 0 and Q# < array.length), loadNextQuestion, else, quizEnd
+
+                [ ] If quizEnd, display gameOver Image, with finalScore for 5 seconds 
+
+                [ ] Load name and finalScore to scoreBoard
+
+                [ ] Display scoreBoard and playAgain Button
+
+                [ ] If playAgain, clear and restart the process 
 
 
             Build:
-            •	Set up three files, index.html, script.js and style.css (add to Github)
+            •	Set up three files, index.html, script.js and style.css (add to Github) [x]
             •	HTML:
-                >Layout for Landing page
-                >Layout for question and multiple choice answers
+                >Layout for Landing page [x]
+                >Layout for question and multiple choice answers [x]
+                >Knit functions for current score, gameOver.
+
             •	JavaScript: 
                 > Timer routine
                 > Splash screen routine that announces game is over - alert box
@@ -48,7 +76,7 @@ Submitted: January --, 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
             •	
 
             Validation:
-            •	TBD
+            •	Alert if no name entered in required playerName field
             •	TBD  
             •	TBD
 

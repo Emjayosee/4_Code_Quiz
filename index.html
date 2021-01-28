@@ -4,66 +4,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Great GAAR Challenge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Coding Quiz</title>
   <link rel="stylesheet" href="Assets/style.css" />
 </head>
 
 <body>
 
-  <div>
     <container>
-    <h1>The Great Week 3 Coding Challenge</h1>
-    <div class="Intro" >
-      <!-- <p>Welcome to the Week 3 Coding Challenge.  It will give you a chance to test your skills in coding terminology  by answering five skill testing questions. When you are ready to begin the quiz, enter your name then press the start button, the timer will start.  You will be given 60 seconds to choose the correct answer to five questions. The game will end after 60 seconds and your score will be displayed.  Only the top three high scores will be displayed.</p> -->
+  
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-11">
 
-    </div>
-    <br>
-    <div class="Question_Area">
-      
-      <form>
-        <!-- <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required> -->
-      <div><label class="name" for="name">Enter Your Name</label>
-      <div><input type="text" id="playerName" name="playerName" required>
-      <p>Time Remaining in the Quiz is: <span id="time"></span></p></div></div>
-     
-      <button class="startButton btn" type="submit" onclick="revealQ1(event)">Start</button>
-    </form>
+              <div id="Intro" class="Intro">
+                <h1>Code Quiz</h1>
+                <br>
+                <p>Welcome to the Code Quiz.  It will give you a chance to test your skills in coding terminology  by answering five skill testing questions. When you are ready to begin the quiz, enter your name then press the start button, the timer will start.  You will be given 60 seconds to choose the correct answer to the five questions. You score one point for a correct answer and lose 5 seconds for a worng answer.  The game will end after 60 seconds and your score will be displayed.  Only the top three high scores will be displayed.</p>
 
-      <div id="quizcontainer" class="quizcontainer">
-
-        <!-- Need to have the number x of y change -->
-        <h3 id="questionnumber" >Question 1 of 5 :</h3> 
-
-        <form role="form" id="quizform" name="quizform">
-         
-          <div>
-
-              <label id="question" class="container">
-                <input type="text" >
-                <span class="question"></span>
-              <label id="choiceA" class="container">
-                <input type="radio" checked="checked" name="radio" class="radio">
-                <span class="checkmark"></span>
-              </label>
-              <label id="choiceB" class="container">
-                <input type="radio" name="radio" class="radio">
-                <span class="checkmark"></span>
-              </label>
-              <label id="choiceC" class="container">
-                <input type="radio" name="radio" class="radio">
-                <span class="checkmark"></span>
-              </label>
-              <label id="choiceD" class="container">
-                <input type="radio" name="radio" class="radio">
-                <span class="checkmark"></span>
-              </label>
-
-              <div id="nextQuestioncontainer">
-                <button class="nextQuestion btn" type="submit" onclick="nextQuestion(event)">Next</button>
               </div>
-          </div>
-        </form> 
+
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class = "intro" class="col-sm-6">
+              <form>
+                <div><label class="name" for="name">Enter Your Name</label>
+                <div><input type="text" id="playerName" name="playerName" required>
+                <p>Time Remaining in the Quiz is: <span id="time">1:00</span></p>
+                </div>
+                </div>
+    
+                <button class="startButton btn" type="submit" onclick="start(event)">Start</button>
+              </form>
+            </div>
+            <br>
+            <questionBox id="questionBox" class="hide"><div class = "section2" class="col-sm-5">
+              <h3 id="questionNumber" id="Question"> ="Question + i + of + quiz.length"</h3> 
+              <h2 id=question>Question</h2>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="A">
+                <label id="choiceA" class="form-check-label1" for="flexRadioDefault1"></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="B" checked>
+                <label id="choiceB" class="form-check-label2" for="flexRadioDefault2"></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="C">
+                <label id="choiceC" class="form-check-label3" for="flexRadioDefault3"></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="D">
+                <label id="choiceD" class="form-check-label4" for="flexRadioDefault4"></label>
+              </div>
+              <div>
+                <button class="nextQuestion btn" type="submit" onclick="nextQuestion(event)">Submit Response</button>
+              </div>
+            </questionBox>
+        </div>
+
+        <gameOver class = gameOverHide>
+          <img id="gameOver" src="./Assets/gameOver.jpg">
+          <br>
+          <p id="finalName"></p>
+          <p id="finalScore"></p>
+          <p id="finalTime"></p>
+          <button class="playAgain" type="submit" onclick="playAgain(event)">Play Again</button>
+         
+        </gameOver>
       </div>
 
     </div>

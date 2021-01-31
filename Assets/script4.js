@@ -36,7 +36,7 @@ organized top down to match the HTML flow.  Much of the CSS styling is self expl
 
 /* Set Global Variables, including questions, some variable arenamed locally below */
 // list of all questions, choices, and answers
-var questions = [
+      var questions = [
     {
         quest: "What does HTML stand for?",
         choices: ["He Took My Laptop", "Hyper Text Markup Language", "Hydraulically Torqued Machine Language", "Hewlett Then Made Laptops"],

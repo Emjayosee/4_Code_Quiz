@@ -1,32 +1,8 @@
-
-
-
-
-
-
-
-.Intro {
-  border-style: double;
-}
-
-.section {
-  border-style: solid;
-  border-color: red;
-}
-
-.section2 {
-  border-style: solid;
-  border-color: blue;
-}
-
-.col-sm-5 {
-  float:left
-}
-
 .hide {
-  display: none;  /* add none as an attribute to hide sections*/
+  display: none;
 }
 
-.gameOverHide {
-  display:"";  /* add none as an attribute to hide sections*/
+.startbtn {
+  border-color: solid lime;
+  color: red;
 }

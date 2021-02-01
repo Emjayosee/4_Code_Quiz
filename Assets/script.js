@@ -1,7 +1,7 @@
- /* This is the stylesheet to my Password Generator Website it is
+ /* This is the script file to my Coding Game website, assignment 4. It is
 organized top down to match the HTML flow.  Much of the CSS styling is self explanatory due to the semantic HTML used in the associated file. */
 
-/*last updated by Michael O'Connor, January --, 2021*/
+/*last updated by Michael O'Connor, January 31, 2021*/
 /* There was no starter code, so I am in the deep end of the pool*/
 
 /* Here is the plan:
@@ -44,22 +44,22 @@ var questions = [
 },
     {
         quest: "Who claimed to have invented the internet, but didn't?",
-        choices: ["Int Ernet", "Choice2B", "Al Gore", "Choice2D"],
+        choices: ["Robert Kahn and Vint Cerf", "Steve Jobs", "Al Gore", "Bill Clinton"],
         answer: "Al Gore",
 },
   {
-        quest: "When would you use JQuery?",
-        choices: ["Choice3A", "On legacy systems", "Choice3C", "Choice3D"],
-        answer: "On legacy systems",
+        quest: "Who actually invented the internet?",
+        choices: ["Robert Kahn and Vint Cerf", "Tim Berners-Lee", "Depends Who You Ask", "Bill Gates"],
+        answer: "Depends WHo You Ask",
 }, 
     {
-        quest: "How many hours a week should you spend coding?",
-        choices: ["Choice4A", "Choice4B", "40 or more", "Choice4D"],
-        answer: "40 or more",
+        quest: "API is an abbreviation for what",
+        choices: ["Application Processing Interval", "Annual Pay Incentive", "Application Programming Interface", "Whatever"],
+        answer: "Application Programming Interface",
 },
     {
         quest: "How many milliseconds in a second?",
-        choices: ["Choice5A", "Choice5B", "Choice5C", "1,000"],
+        choices: ["100", "10", "10,000", "1,000"],
         answer: "1,000",
  },
 ];
@@ -97,7 +97,6 @@ var questions = [
               alert("You Must Enter a Name to Play");
           } else {
 
-       
         instructions.setAttribute("class", "hide");
         
         question.removeAttribute("class");
@@ -131,6 +130,7 @@ var questions = [
           var choice = cQuestion.choices[i];
           //create button for each choice
           var selection = document.createElement("button");
+          selection.setAttribute('frameborder', "0");
           
           var questionNumber = document.querySelector("#questionNumber") 
           questionNumber.innerHTML = "Question " + (questionIndex+1) + " of " + questions.length;
@@ -196,7 +196,7 @@ var questions = [
       function clockTick() {
         time--;
         timer.textContent = time;
-        console.log(time)
+        
         if (time == 0) {
           quizEnd();
         }

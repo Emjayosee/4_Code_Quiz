@@ -21,7 +21,7 @@ Submitted: January 31 2021, Michael O'Connor, WebDev Wannabe, 604 765-6061
             Develop a timed quiz on Coding and have it present a question, allow th user time to respond and go to the next question, advising the user if they are correct or incorrect and then keeping track of the scores and high scores.
 
             Design:
-            •	Landing page to expain the rules, show the high scores;
+            •	Landing page to expain the rules and start the quiz;
             •	Need to build a timer to countdown and penalize if there is a wrong guess;
             •	Need to be able to cycle questions through a part of the viewport;
             •	Need a way to aggregate the scores, add as records and display the top scores;

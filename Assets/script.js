@@ -50,7 +50,7 @@ var questions = [
   {
         quest: "Who actually invented the internet?",
         choices: ["Robert Kahn and Vint Cerf", "Tim Berners-Lee", "Depends Who You Ask", "Bill Gates"],
-        answer: "Depends WHo You Ask",
+        answer: "Depends Who You Ask",
 }, 
     {
         quest: "API is an abbreviation for what",
